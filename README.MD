@@ -1,0 +1,1 @@
+docker build -t acolasz/java-base:1.8.xxx .
