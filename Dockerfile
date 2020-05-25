@@ -38,5 +38,5 @@ RUN git config --global user.name "${tech_user}" \
 	&& git config --global user.email "${tech_user}@gmail.com"
 	
 # Environment variables
-ENV JAVA_HOME=usr/lib/jvm/java-8-oracle/
+ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle/
 ENV	PATH=${JAVA_HOME}\bin:${PATH}
