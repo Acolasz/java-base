@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+  jdk-server:
+    image: acolasz/java-base:1.8.${U_VERSION}
+    build:
+      context: .
+      args:
+        artifactory_url: "https://artifactory.dorsum.eu/artifactory"
+        artifactory_user: "user"
+        artifactory_password: "psw"
+        tech_user: "acolasz"
+        jdk_version: "${U_VERSION}"
+        
