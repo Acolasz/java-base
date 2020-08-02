@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM acolasz/debian-base:10.0.0
 
 ARG artifactory_url
 ARG artifactory_user
@@ -7,14 +7,14 @@ ARG tech_user
 ARG jdk_version
 
 # Unix tools
-RUN apt-get update && apt-get install -y \
-		sudo \
-		curl \
-		wget \
-		net-tools \
-		procps \
-		nano \
-		git
+# RUN apt-get update && apt-get install -y \
+		# sudo \
+		# curl \
+		# wget \
+		# net-tools \
+		# procps \
+		# nano \
+		# git
 
 RUN mkdir -p /usr/lib/jvm/java-8-oracle/ \
 	&& cd /usr/lib/jvm/java-8-oracle/ \
